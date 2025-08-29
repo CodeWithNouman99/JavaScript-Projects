@@ -1,0 +1,79 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+    .container {
+      width: 420px;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-decoration: underline;
+      color: #4facfe;
+      cursor: pointer;
+    }
+    .input {
+      width: 80%;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    select {
+      width: 45%;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      margin: 10px 5px;
+      background: #fff;
+      color: #333;
+      cursor: pointer;
+    }
+    #convertButton {
+      margin-top: 20px;
+      padding: 10px 25px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #4facfe, #00f2fe);
+      color: #fff;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #convertButton:hover {
+      background: linear-gradient(90deg, #00f2fe, #4facfe);
+      transform: scale(1.05);
+    }
+    p {
+      margin-top: 25px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #ddd;
+    }
+    #result {
+      margin-top: 10px;
+      font-size: 26px;
+      font-weight: 700;
+      color: #4ef037;
+    }

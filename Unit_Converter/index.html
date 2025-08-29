@@ -1,1 +1,33 @@
-#
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit Converter Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Unit Converter Hub</h2>
+    <input type="text" placeholder="Enter Value" class="input" />
+    <br>
+    <select id="fromUnit">
+      <option value="meters">Meters</option>
+      <option value="Kilometers">Kilometers</option>
+      <option value="miles">Miles</option>
+      <option value="feet">Feet</option>
+    </select>
+    <select id="toUnit">
+      <option value="meters">Meters</option>
+      <option value="Kilometers">Kilometers</option>
+      <option value="miles">Miles</option>
+      <option value="feet">Feet</option>
+    </select>
+    <br>
+    <button id="convertButton">Convert</button>
+    <p>Result:</p>
+    <span id="result">0</span>
+  </div>
+  <script src="Converter.js"></script>
+</body>
+</html>
