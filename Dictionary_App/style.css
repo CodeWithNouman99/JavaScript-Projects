@@ -1,0 +1,191 @@
+:root {
+  --bg: #f5f7fa;
+  --card: #fff;
+  --text: #333;
+  --primary: #007bff;
+  --secondary: #666;
+}
+body.dark {
+  --bg: #1e1e1e;
+  --card: #2b2b2b;
+  --text: #f5f5f5;
+  --primary: #4dabf7;
+  --secondary: #aaa;
+}
+
+body {
+  background: #f8f4ea;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.searchBox button,
+.audioBtn,
+.toggleBtn {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.searchBox button:hover,
+.audioBtn:hover,
+.toggleBtn:hover {
+  transform: scale(1.05);
+  background-color: var(--primary);
+  color: #fff;
+}
+.result {
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+input::placeholder {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.container {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.searchBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+  flex: 1;
+}
+.searchBox button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+input::placeholder {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+.result {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.word {
+  font-size: 24px;
+
+  font-weight: 700;
+
+  color: #333;
+}
+
+.phonetics {
+  font-size: 18px;
+
+  color: #007bff;
+
+  margin-bottom: 10px;
+}
+.audioBtn {
+  padding: 6px 12px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.meaning-section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+.meaning-section h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #007b;
+}
+.meaning-section .meaning {
+  font-size: 16px;
+  color: #333;
+}
+.meaning-section .example {
+  font-size: 15px;
+
+  color: #666;
+
+  font-style: italic;
+}
+.synonyms,
+.antonyms {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 4px;
+}
+.synonyms {
+  background-color: #e6f7ff;
+  border: 1px solid #b3e0ff;
+}
+
+.antonyms {
+  background-color: #fff0f0;
+  border: 1px solid #ffcccc;
+}
+footer {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+footer p {
+  margin: 0;
+  font-style: italic;
+}
+
+.toggleBtn
+{
+    font-size: 16px;
+    width: 90px;
+    padding: 6px auto;
+    height: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.placeholder
+{
+  text-align: center;
+  font-size: 1rem;
+}

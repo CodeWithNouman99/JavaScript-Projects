@@ -1,1 +1,58 @@
-#
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dictionary</h1>
+            <button class="toggleBtn">Dark Mode</button>
+        </header>
+        <div class="searchBox">
+            <input type="text" placeholder="Enter a Word...">
+            <button>Search</button>
+        </div>
+        <!-- placeholder before search -->
+          <p class="placeholder">Search for any word to see its meaning...</p>
+          <!-- Example Result (Static for now) -->
+           <div class="result">
+      <p class="word">Example</p>
+      <p class="phonetics">/ˈɛɡzæmpəl/</p>
+      <button class="audioBtn">🔊 Listen</button>
+<audio id="audio"></audio>
+
+
+      <div class="meaning-section">
+        <h3>Noun</h3>
+        <p class="meaning">A thing characteristic of its kind or illustrating a general rule.</p>
+        <p class="example"> E.g: "This is an example sentence."</p>
+      </div>
+
+      <div class="meaning-section">
+        <h3>Verb</h3>
+        <p class="meaning">To illustrate or demonstrate something by giving an instance.</p>
+        <p class="example">E.g: "Teachers often example new words in context."</p>
+        <div class="meaning-section">
+        <div class="synonyms">
+  <h3>Synonyms</h3>
+  <p>sample, model, case</p>
+  </div>
+</div>
+ <div class="meaning-section">
+        <div class="antonyms">
+  <h3>Antonyms</h3>
+  <p>counterexample, opposite</p>
+  </div>
+</div>
+        <footer>
+  <p>Made with ❤️ by Nouman</p>
+</footer>
+    </div>
+    <script src="dictionary.js"></script>
+</body>
+</html>
