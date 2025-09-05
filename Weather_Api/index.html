@@ -1,1 +1,67 @@
-#
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- app header + search -->
+  <header class="app-header">
+    <h1 class="app-title" style="text-decoration: underline;">Weather App</h1>
+    <form id="searchForm" class="search-form" aria-label="Search city">
+      <input id="searchInput" class="search-input" type="search" placeholder="Search city or ZIP" aria-label="City name" required>
+      <button id="searchBtn" class="search-btn" type="submit">Search</button>
+      <button id="geoBtn" class="geo-btn" type="button" title="Use my location">My location</button>
+    </form>
+  </header>
+
+  <main class="container">
+    <!-- loader and error -->
+    <div id="loader" class="loader" hidden>Loading...</div>
+    <div id="error" class="error" role="alert" hidden></div>
+
+    <!-- current weather card - JS will populate -->
+    <section id="current" class="current-weather" aria-live="polite">
+      <h2 id="locationName" class="location-name">--</h2>
+      <p id="localTime" class="local-time">--</p>
+
+      <div class="weather-main">
+        <img id="weatherIcon" class="weather-icon" src="" alt="" hidden>
+        <div class="temp-block">
+          <p id="temp" class="temp">--°C</p>
+          <p id="description" class="description">--</p>
+        </div>
+      </div>
+
+      <ul class="details">
+        <li> <span id="feels">--</span></li>
+        <li> <span id="humidity">--</span></li>
+        <li> <span id="wind">--</span></li>
+      </ul>
+    </section>
+
+    <!-- forecast -->
+    <section id="forecast" class="forecast">
+      <h3>5-day forecast</h3>
+      <div id="forecastContainer" class="forecast-container"></div>
+    </section>
+  </main>
+
+  <!-- template for forecast cards -->
+  <template id="forecastTemplate">
+    <article class="forecast-card">
+      <p class="day">Day</p>
+      <img class="icon" src="" alt="" />
+      <p class="temp-range"><span class="min">--</span> / <span class="max">--</span></p>
+    </article>
+  </template>
+  
+  <footer>
+    <h3 style="text-align: center; cursor: pointer;">"Made with &#10084; by Nouman"</h3>
+  </footer>
+
+  <script src="Weather.js" defer></script>
+</body>
+</html>
